@@ -1,161 +1,36 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* .navbar {
-    overflow: hidden;
-    background-color: rgb(198, 108, 108);
-  }
-  
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: crimson;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  } */
-
- /*styling the background image section*/
-
- /*styling the navbar*/
- .container{
-   background-color:#F0DCDE;
- }
-
-.background-image{
+    font-size: large;
+    background-image: url("images/bagj.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    margin: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    height: 10%;
-    width: 20%;
-}
- /*adding animation to images section*/
- .mySlides {display: none;}
-img {vertical-align: middle;}
+    background-attachment: fixed;
+    /* background-size: cover; */
+    }
 
-/* Styling the lideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+/*styling the navbar section starts here*/
+
+.container-fluid{
+  height: 4rem;
+  background-color: rgb(190, 132, 132);
 }
 
-/* Sty;ling theCaption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+
+/*styling the text sectio starts here*/
+/* .text-holder{
   position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+  padding-left: 112%;
+  padding-top: 35em;
+  height: 7rem;
+  top: 6px;
+  transform: translate(-50%, -50%);
+  color: rgb(250, 246, 246);
+  font-size: xx-large; */
 
-/* Styling the number text (1/4 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
-/* Styling the dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 
-.active {
-  background-color: #717171;
 }
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-/* styling the dropdown menu*/
-/* .dropdown-menu {
-  float: left;
-  overflow: hidden;
-}
-.dropdown-item a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-item a:hover {
-  background-color: #ddd;
-}
-
-.dropdown-menu .dropdown-item {
-  display: block;
-} */
