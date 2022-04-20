@@ -14,4 +14,25 @@ $(document).ready(function() {
          if(searchData === "" || searchData === null) {
            displayError();
          }
-     
+     else {
+        $.ajax({
+            url: bookUrl + searchData,
+            dataType: "json",
+            success: function(response) {
+              console.log(response)
+              if (response.totalItems === 0) {
+                alert("no result!.. try again")
+              }
+              else {
+                $("#title").animate({'margin-top': '5px'}, 1000); //animating search box 
+                $(".book-list").css("visibility", "visible");
+                displayResults(response);
+              }
+            },
+            error: function () {
+              alert("Something went wrong.. <br>"+"Try again!");
+            }
+          });
+        }
+        $("#search-box").val(""); 
+     });
