@@ -9,7 +9,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* background-size: cover; */
+    background-size: cover;
+    height: 100%;
     }
 
 /*styling the navbar section starts here*/
@@ -19,18 +20,23 @@ body {
   background-color: rgb(190, 132, 132);
 }
 
+/*styling of the books' search bar starts here*/
 
-/*styling the text sectio starts here*/
-/* .text-holder{
-  position: absolute;
-  padding-left: 112%;
-  padding-top: 35em;
-  height: 7rem;
-  top: 6px;
-  transform: translate(-50%, -50%);
-  color: rgb(250, 246, 246);
-  font-size: xx-large; */
-
-
-
+.center{
+  margin: auto;
 }
+
+#header {
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: sans-serif;
+}
+
+.book-list {
+  margin-top: 50px;
+  visibility: hidden;
+}
+
