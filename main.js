@@ -30,9 +30,37 @@ $(document).ready(function() {
               }
             },
             error: function () {
-              alert("Something went wrong.. <br>"+"Try again!");
+              alert("Something went wrong.. <br>"+"Try again!"); //handling error during book search 
             }
           });
         }
         $("#search-box").val(""); 
      });
+     /*function to display result*/
+     function displayResults(response) {
+        for (var i = 0; i < response.items.length; i+=2) {
+          item = response.items[i];
+          title1 = item.volumeInfo.title;
+          author1 = item.volumeInfo.authors;
+          publisher1 = item.volumeInfo.publisher;
+          bookLink1 = item.volumeInfo.previewLink;
+          bookIsbn = item.volumeInfo.industryIdentifiers[1].identifier
+          bookImg1 = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeHldr ;
+  
+          item2 = response.items[i+1];
+          title2 = item2.volumeInfo.title;
+          author2 = item2.volumeInfo.authors;
+          publisher2 = item2.volumeInfo.publisher;
+          bookLink2 = item2.volumeInfo.previewLink;
+          bookIsbn2 = item2.volumeInfo.industryIdentifiers[1].identifier
+          bookImg2 = (item2.volumeInfo.imageLinks) ? item2.volumeInfo.imageLinks.thumbnail : placeHldr ;
+  
+       
+          outputList.innerHTML += '<div class="row mt-4">' +
+                                  formatOutput(bookImg1, title1, author1, publisher1, bookLink1, bookIsbn) +
+                                  formatOutput(bookImg2, title2, author2, publisher2, bookLink2, bookIsbn2) +
+                                  '</div>';
+  
+          console.log(outputList);
+        }
+     }
