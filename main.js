@@ -87,3 +87,8 @@ $(document).ready(function() {
         </div>`
         return htmlCard;
       }
+        /*managing error for empgty query search*/
+     function displayError() {
+        alert("search term can not be empty!")
+      }
+   });
