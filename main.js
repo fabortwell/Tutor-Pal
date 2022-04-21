@@ -56,7 +56,7 @@ $(document).ready(function() {
           bookImg2 = (item2.volumeInfo.imageLinks) ? item2.volumeInfo.imageLinks.thumbnail : placeHldr ;
   
        
-          outputList.innerHTML += '<div class="row mt-4">' +
+          outputList.innerHTML += '<div class="row mt-3">' +
                                   formatOutput(bookImg1, title1, author1, publisher1, bookLink1, bookIsbn) +
                                   formatOutput(bookImg2, title2, author2, publisher2, bookLink2, bookIsbn2) +
                                   '</div>';
@@ -71,7 +71,7 @@ $(document).ready(function() {
         var htmlCard = `<div class="col-lg-6">
           <div class="card" style="">
             <div class="row no-gutters">
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <img src="${bookImg}" class="card-img" alt="...">
               </div>
               <div class="col-md-8">
