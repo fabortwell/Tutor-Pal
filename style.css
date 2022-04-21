@@ -132,5 +132,8 @@ h1{
   margin-left: 28rem;
   padding-top: 4rem;
 
-
+}
+#heading{
+  text-align: center;
+  bottom: 10rem;
 }
