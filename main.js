@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    var item, tile, author, publisher, bookLink, bookImg;
-    var outputList = document.getElementById("list-output");
-    var bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
-    var apiKey = "key=AIzaSyDtXC7kb6a7xKJdm_Le6_BYoY5biz6s8Lw";
-    var placeHldr = '<img src="https://via.placeholder.com/150">';
-    var searchData;
+    let item, tile, author, publisher, bookLink, bookImg;
+    let outputList = document.getElementById("list-output");
+    let bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
+    let apiKey = "key=AIzaSyDtXC7kb6a7xKJdm_Le6_BYoY5biz6s8Lw";
+    let placeHldr = '<img src="https://via.placeholder.com/150">';
+    let searchData;
     /*adding an event listener to the search button*/
     $("#search").click(function() {
         outputList.innerHTML = ""; //empty html output
